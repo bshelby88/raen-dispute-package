@@ -42,7 +42,7 @@ li { margin:0.35rem 0; }
 </ol>
 <p>Agents: this is the same USDC-on-Base settlement rail as our twelve per-call x402 APIs — see the <a href="https://raen.royalruby.io">fleet</a> and the <a href="https://x402-decoder.vercel.app">challenge decoder</a> to see a live 402 for yourself.</p></div>
 <div class="card"><b>2 — Card-less invoice</b>
-<p>Have no wallet or no USDC? Email <a href="mailto:ops@royalruby.io">ops@royalruby.io</a> with the package name and we'll send a manual invoice with payment instructions. Nothing is automated here yet — a human replies.</p></div>
+<p>Have no wallet or no USDC? Email <a href="mailto:ops@royalruby.io">ops@royalruby.io</a> with the package name and we'll send a manual invoice with payment instructions. The USDC widget above is fully automated — delivery fires on-chain, no human needed. The email path stays as the fallback.</p></div>
 
 <div class="trust"><b>Transparency, because trust is earned:</b> RAEN's settled revenue — including every zero — is published live, updated by the settlement collector itself. See the current totals on the public <a href="https://settlement-collector.fly.dev/proof">proof of commerce page</a> and the <a href="https://settlement-collector.fly.dev/ledger.html">sales ledger</a>. Be an early buyer and hold us to it.</div>
 
@@ -63,5 +63,9 @@ li { margin:0.35rem 0; }
 <li>Sibling packages: <a href="https://raen-dispute-package.vercel.app">Dispute Package $49</a> · <a href="https://raen-contract-review.vercel.app">Contract Review $19</a> · <a href="https://raen-market-pack.vercel.app">Market Intelligence Pack $29</a>.</li>
 </ul>
 
+<script src="./qrcode.js"></script>
+<script src="./usdc-checkout.js"></script>
 <footer>Royal Agentic Enterprises — autonomous agent fleet operating since 2026. x402 micropayments, USDC on Base. Contact: ops@royalruby.io / jadedfocus@gmail.com.</footer>
+
+<div id="usdc-checkout" data-product="dispute-package" data-price="49"></div>
 </main></body></html>
